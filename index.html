@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Writer Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Arabic Writer Pro</div>
+    <button id="themeToggle">🌙 Dark / Light</button>
+</header>
+
+<main>
+    <div class="editor-container">
+        <textarea id="editor" dir="rtl" style="text-align:right;"  placeholder="Start typing... English converts automatically to Arabic"></textarea>
+    </div>
+
+    <h2 class="section-title">Arabic Tools</h2>
+
+    <div class="extra-buttons">
+
+        <!-- LETTER BUTTONS -->
+        <button class="btn insert" data-char="أ">أ</button>
+        <button class="btn insert" data-char="ٱ">ٱ</button>
+        <button class="btn insert" data-char="آ">آ</button>
+		<button class="btn insert" data-char="إ">إ</button>
+
+
+        <!-- DIACRITICS -->
+        <button class="btn insert" data-char="َ"> َ </button>
+        <button class="btn insert" data-char="ً"> ً </button>
+        <button class="btn insert" data-char="ُ"> ُ </button>
+        <button class="btn insert" data-char="ٌ"> ٌ </button>
+        <button class="btn insert" data-char="ّ"> ّ </button>
+        <button class="btn insert" data-char="ْ"> ْ </button>
+        <button class="btn insert" data-char="ِ"> ِ </button>
+        <button class="btn insert" data-char="ٍ"> ٍ </button>
+        <button class="btn insert" data-char="ٰ"> ٰ </button>
+        <button class="btn insert" data-char="ٖ"> ٖ </button>
+        <button class="btn insert" data-char="ٗ"> ٗ </button>
+
+    </div>
+
+    <h2 class="section-title">Virtual Arabic Keyboard</h2>
+	<div id="keyboard"></div>
+	
+	
+	<h2 class="section-title">Punctuation & Symbols</h2>
+	<div class="extra-buttons">
+
+    <!-- Punctuation -->
+    <button class="btn insert" data-char="؟">؟</button>
+    <button class="btn insert" data-char="؛">؛</button>
+    <button class="btn insert" data-char="،">،</button>
+    <button class="btn insert" data-char=".">.</button>
+    <button class="btn insert" data-char="ـ">ـ</button>
+
+    <!-- Arabic Numbers -->
+    <button class="btn insert" data-char="٠">٠</button>
+    <button class="btn insert" data-char="١">١</button>
+    <button class="btn insert" data-char="٢">٢</button>
+    <button class="btn insert" data-char="٣">٣</button>
+    <button class="btn insert" data-char="٤">٤</button>
+    <button class="btn insert" data-char="٥">٥</button>
+    <button class="btn insert" data-char="٦">٦</button>
+    <button class="btn insert" data-char="٧">٧</button>
+    <button class="btn insert" data-char="٨">٨</button>
+    <button class="btn insert" data-char="٩">٩</button>
+
+    <!-- Extra -->
+    <button class="btn insert" data-char="٬">٬</button>
+    <button class="btn insert" data-char="٫">٫</button>
+    <button class="btn insert" data-char="٪">٪</button>
+    <button class="btn insert" data-char="!">!</button>
+
+</div>
+
+    <div class="actions">
+        <button id="copyBtn" class="action">Copy</button>
+        <button id="clearBtn" class="action">Clear</button>
+        <button id="downloadTxt" class="action">Download TXT</button>
+    </div>
+</main>
+<h2 class="section-title">Support Our Project</h2>
+
+<div class="support-box">
+    <p>Your support helps us improve Arabic Writer Pro and keep it free for everyone.</p>
+
+    <div class="support-buttons">
+        <a class="support-btn" href="https://www.buymeacoffee.com/" target="_blank">☕ Buy Me a Coffee</a>
+        <a class="support-btn" href="https://www.paypal.com/donate" target="_blank">💳 PayPal Donate</a>
+        <a class="support-btn" href="#" onclick="alert('Coming Soon')">❤️ Other Methods</a>
+    </div>
+</div>
+
+<h2 class="section-title">Share This Tool</h2>
+
+<div class="share-box">
+    <p>Share Arabic Writer Pro with your friends:</p>
+
+    <div class="share-buttons">
+
+        <a class="share-btn whatsapp"
+           href="https://wa.me/?text=Try%20this%20amazing%20Arabic%20writing%20tool:%20YOUR_WEBSITE_URL"
+           target="_blank">
+           WhatsApp
+        </a>
+
+        <a class="share-btn facebook"
+           href="https://www.facebook.com/sharer/sharer.php?u=YOUR_WEBSITE_URL"
+           target="_blank">
+           Facebook
+        </a>
+
+        <a class="share-btn twitter"
+           href="https://twitter.com/intent/tweet?text=Amazing%20Arabic%20writing%20tool&url=YOUR_WEBSITE_URL"
+           target="_blank">
+           X (Twitter)
+        </a>
+
+    </div>
+</div>
+
+
+
+<footer>
+    © 2025 Arabic Writer Pro — All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
