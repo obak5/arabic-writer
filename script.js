@@ -160,3 +160,23 @@ document.getElementById("downloadTxt").onclick = () => {
    ------------------------------------------------------- */
 document.getElementById("themeToggle").onclick = () =>
     document.body.classList.toggle("dark");
+/* -------------------------------------------------------
+   MOBILE FIX — Enable English → Arabic conversion on phones
+   ------------------------------------------------------- */
+editor.addEventListener("input", function () {
+
+    // Detect last characters typed
+    let text = editor.value;
+
+    // Apply transliteration rules exactly like the desktop version
+    for (const key in map) {
+        const regex = new RegExp(key.replace("+", "\\+"), "g");
+        text = text.replace(regex, map[key]);
+    }
+
+    // Update text without breaking cursor
+    const pos = editor.selectionStart;
+    editor.value = text;
+    editor.selectionStart = editor.selectionEnd = pos;
+});
+
