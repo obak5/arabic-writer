@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://obak5.github.io/arabic-writer/sitemap.xml
