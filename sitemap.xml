@@ -4,12 +4,4 @@
     <loc>https://obak5.github.io/arabic-writer/</loc>
     <priority>1.00</priority>
   </url>
-  <url>
-    <loc>https://obak5.github.io/arabic-writer/about.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://obak5.github.io/arabic-writer/contact.html</loc>
-    <priority>0.80</priority>
-  </url>
 </urlset>
