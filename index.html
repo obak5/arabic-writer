@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="3zbPke2vqi59EelYfKrBQDh1VxYiNRSQaWD55QCk3Ik"  />
 
-    <title>Arabic Writer Pro</title>
+    <!-- <title>Arabic Writer Pro</title> -->
     <link rel="stylesheet" href="style.css">
 	<!-- Primary SEO -->
 <title>Arabic Writer Pro – Best Arabic Text Tools | بدون إعلانات</title>
@@ -45,21 +45,51 @@
   "inLanguage": "ar"
 }
 </script>
-
+   
 </head>
 <body>
+<header class="hero-header">
+  <div class="hero-content">
+    <h1>Arabic Writer Pro</h1>
 
-<header>
-    <div class="logo">Arabic Writer Pro</div>
-    <button id="themeToggle">🌙 Dark / Light</button>
+    <p class="hero-tagline">
+      The best free online Arabic writing tool — type Arabic easily,
+      use tashkeel, punctuation, and a smart virtual keyboard.
+    </p>
+
+    <div class="hero-features">
+      <span>✔ Arabic Virtual Keyboard</span>
+      <span>✔ Tashkeel & Diacritics</span>
+      <span>✔ Copy & Download Text</span>
+      <span>✔ No Ads • No Signup</span>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#editor" class="hero-btn primary">Start Writing</a>
+      <a href="#support" class="hero-btn secondary">Support Project</a>
+    </div>
+  </div>
 </header>
+
+
 
 <main>
     <div class="editor-container">
         <textarea id="editor" dir="rtl" style="text-align:right;"  placeholder="Start typing... English converts automatically to Arabic"></textarea>
     </div>
+   <div class="actions">
+        <button id="copyBtn" class="action">Copy</button>
+        <button id="clearBtn" class="action">Clear</button>
+        <button id="downloadTxt" class="action">Download TXT</button>
+    </div>
+   
 
-    <h2 class="section-title">Arabic Tools</h2>
+    <h2 class="section-title">Virtual Arabic Keyboard</h2>
+	<div id="keyboard"></div>
+
+
+
+   <h2 class="section-title">Arabic Tools</h2>
 
     <div class="extra-buttons">
 
@@ -85,8 +115,7 @@
 
     </div>
 
-    <h2 class="section-title">Virtual Arabic Keyboard</h2>
-	<div id="keyboard"></div>
+
 	
 	
 	<h2 class="section-title">Punctuation & Symbols</h2>
@@ -119,16 +148,37 @@
 
 </div>
 
-    <div class="actions">
-        <button id="copyBtn" class="action">Copy</button>
-        <button id="clearBtn" class="action">Clear</button>
-        <button id="downloadTxt" class="action">Download TXT</button>
-    </div>
+ 
 </main>
 
+<section class="seo-content">
+  <h1>Arabic Writer Pro – Free Arabic Writing Tool</h1>
+
+  <h2>Write Arabic Easily Online</h2>
+  <p>
+    Arabic Writer Pro is a free online Arabic writing tool that helps you
+    type Arabic text easily using a smart virtual keyboard.
+    It supports Arabic tashkeel, punctuation, numbers, and fast text editing.
+  </p>
+
+  <h2>Arabic Writing Features</h2>
+  <ul>
+    <li>Arabic virtual keyboard</li>
+    <li>Tashkeel and diacritics</li>
+    <li>Copy and download Arabic text</li>
+    <li>Mobile and desktop friendly</li>
+    <li>No ads, no registration</li>
+  </ul>
+
+  <h2>Who Is This Tool For?</h2>
+  <p>
+    Arabic Writer Pro is ideal for students, teachers, writers,
+    translators, and anyone who needs to write Arabic text quickly and correctly.
+  </p>
+</section>
 
 
-<h2 class="section-title">Support Our Project</h2>
+<h2 id="support" class="section-title">Support Our Project</h2>
 
 <div class="support-box fancy-support">
 
@@ -195,6 +245,12 @@
 
 <footer>
     © 2025 Arabic Writer Pro — All Rights Reserved
+	
+  <a href="about.html">About</a> |
+  <a href="privacy.html">Privacy</a> |
+  <a href="terms.html">Terms</a> |
+  <a href="contact.html">Contact</a>
+
 </footer>
 
 <script src="script.js"></script>
