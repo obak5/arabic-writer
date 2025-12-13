@@ -30,23 +30,7 @@ body {
     transition: 0.3s;
 }
 
-/* ----------------------------------------------------------
-   HEADER
----------------------------------------------------------- */
 
-header {
-    padding: 15px 20px;
-    background: var(--box);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #8884;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
 
 /* ----------------------------------------------------------
    MAIN AREA
@@ -258,4 +242,242 @@ footer {
     padding: 20px;
     background: var(--box);
     margin-top: 40px;
+}
+
+/* ==========================================================
+   GLOBAL NAVIGATION (FOR ALL PAGES)
+========================================================== */
+
+.main-nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text);
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.main-nav a:hover {
+    background: #00000010;
+}
+
+.main-nav a.active {
+    background: var(--blue);
+    color: #fff;
+}
+
+/* Make header consistent everywhere */
+header {
+    padding: 15px 20px;
+    background: var(--box);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8884;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ==========================================================
+   SEO CONTENT (TEXT BLOCKS UNDER TOOL)
+========================================================== */
+
+.seo-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: var(--box);
+    border-radius: 14px;
+    line-height: 1.8;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.seo-content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.seo-content h2 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.seo-content ul {
+    padding-left: 20px;
+}
+
+.seo-content li {
+    margin-bottom: 8px;
+}
+
+/* ==========================================================
+   GENERIC PAGE CONTENT (ABOUT / CONTACT / PRIVACY / TERMS)
+========================================================== */
+
+.page-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--box);
+    border-radius: 14px;
+    line-height: 1.8;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.page-content h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.page-content h2 {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+/* ==========================================================
+   FORMS (CONTACT PAGE)
+========================================================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background: var(--box);
+    color: var(--text);
+}
+
+form button {
+    width: fit-content;
+}
+
+/* ==========================================================
+   FOOTER LINKS
+========================================================== */
+
+footer a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 6px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================
+   MOBILE FIX
+========================================================== */
+
+@media (max-width: 600px) {
+    .main-nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+/* ===== HERO HEADER ===== */
+.hero-header {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-bottom: 25px;
+}
+
+.hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.hero-features span {
+  background: rgba(255,255,255,0.12);
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.hero-btn.primary {
+  background: #ffcc00;
+  color: #000;
+}
+
+.hero-btn.primary:hover {
+  background: #ffd633;
+}
+
+.hero-btn.secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.hero-btn.secondary:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero-header h1 {
+    font-size: 2.2rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
 }
