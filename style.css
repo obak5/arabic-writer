@@ -481,3 +481,13 @@ footer a:hover {
 html {
   scroll-behavior: smooth;
 }
+.seo-content p a {
+  color: var(--blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.seo-content p a:hover {
+  text-decoration: underline;
+}
+
