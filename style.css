@@ -53,6 +53,7 @@ main {
     color: var(--text);
     direction: rtl;
     unicode-bidi: plaintext;
+	min-height: 200px;
 }
 
 .section-title {
